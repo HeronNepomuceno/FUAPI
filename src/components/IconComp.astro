@@ -1,0 +1,14 @@
+---
+const {i} = Astro.props
+const sprite = `sprite.svg#${i}`
+---
+
+<svg class="icon" viewBox="0 0 24 24">
+	<use xlink:href={sprite}></use>
+</svg>
+
+<style lang="styl">
+.icon
+    fill rgb(255, 255, 255)
+    width 24px
+</style>
