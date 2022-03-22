@@ -1,0 +1,64 @@
+---
+const {description} = Astro.props;
+const {image} = Astro.props;
+const {title} = Astro.props;
+const {url} = Astro.props;
+---
+
+<div class="card">
+	<div class="head">
+		<img class="image" src={image}/>
+		<span class="title">{title}</span>
+	</div>
+	<div class="body">
+		<div class="description">{description}</div>
+	</div>
+	<div class="footer">
+		<a class="button" href={url}>Saiba mais</a>
+	</div>
+</div>
+
+<style lang="styl">
+.card
+	background #ddd
+	border-radius 8px
+	display flex
+	flex-direction column
+	overflow hidden
+
+.head
+	margin-bottom 16px
+	position relative
+
+.image
+	display flex
+	width 100%
+
+.title
+	background #149fe3 // (temp) need vars
+	border-top-right-radius 8px
+	bottom 0
+	color #f0f9ff // (temp) need vars
+	display flex
+	left 0
+	padding 16px
+	position absolute
+
+.body
+	padding 0 16px 24px
+
+.footer
+	padding 0 16px 16px
+
+.button
+	align-items center
+	background #149fe3 // (temp) need vars
+	border-radius 4px
+	color #f0f9ff // (temp) need vars
+	display flex
+	fill #f0f9ff // (temp) need vars
+	height 40px
+	justify-content center
+	padding 0 16px
+	text-decoration none
+</style>

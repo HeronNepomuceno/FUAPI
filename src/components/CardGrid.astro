@@ -1,0 +1,25 @@
+<section class="card-grid">
+	<slot/>
+</section>
+
+<style lang="styl">
+.card-grid
+	margin-top 128px //temp
+	display grid
+	gap 8px
+	grid-template-columns repeat(auto-fit, minmax(344px, 1fr))
+	padding 0 8px
+	
+	@media (min-width: 360px)
+		padding 0 16px
+
+	@media (min-width: 600px)
+		gap 16px
+		padding 0 24px
+
+	@media (min-width: 840px)
+		padding 0 32px
+
+	@media (min-width: 1080px)
+		padding 0 64px
+</style>

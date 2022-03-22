@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+		"sprite": "svg-sprite -s --symbol-dest icons --symbol-sprite ../public/sprite.svg src/icons/*.svg"
   },
   "devDependencies": {
     "astro": "^0.24.3",
