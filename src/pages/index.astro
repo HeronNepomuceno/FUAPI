@@ -2,15 +2,16 @@
 // Style Imports
 import '../styles/reset.styl';
 import '../styles/vars.styl';
+
 // Component Imports
 import Card from '../components/Card.astro';
 import CardGrid from '../components/CardGrid.astro';
-import Fab from '../components/Fab.astro';
 import HeaderComp from '../components/HeaderComp.astro';
 import MenuComp from '../components/MenuComp.astro'
+import Fab from '../components/Fab.astro';
 import FooterComp from '../components/FooterComp.astro'
-// You can import components from any supported Framework here!
 
+// You can import components from any supported Framework here!
 let title = 'My Astro Site';
 
 ---
@@ -28,39 +29,39 @@ let title = 'My Astro Site';
 	<HeaderComp />
 	<MenuComp />
 	<main>
-		<CardGrid>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-		</CardGrid>
 		<!-- <CardGrid>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+			<Card
+				title="Projeto"
+				image="/assets/img/dario.jpg"
+				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+				url="#"/>
+		</CardGrid> -->
+		<CardGrid>
 			<Card
 				title="Projeto"
 				image="https://i.pinimg.com/736x/8f/5d/a7/8f5da7756b5adc99b61e72e2d0acb255.jpg"
@@ -91,8 +92,9 @@ let title = 'My Astro Site';
 				image="/assets/img/castlevania2.png"
 				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
 				url="#"/>
-		</CardGrid> -->
-		<FooterComp />
+		</CardGrid>
 	</main>
+	<FooterComp />
+	<Fab/>
 </body>
 </html>
