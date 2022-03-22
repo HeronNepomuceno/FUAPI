@@ -1,0 +1,110 @@
+<nav class="menu-wrapper">
+    <details class="menu-disclosure">
+      <summary class="menu-caption">
+        Menu
+      </summary>
+      <ul class="menu-list">
+        <li class="menu-accordion">
+          <details class="accordion-disclosure">
+            <summary class="accordion-caption">
+                Sobre a FUAPI
+            </summary>
+
+            <ul class="item-wrapper">
+              <li class="item">
+                <a href="">Resumo</a>
+              </li>
+              <li class="item">
+                <a href="">O que a FUAPI faz</a>
+              </li>
+              <li class="item">
+                <a href="">Estatuto</a></li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="menu-accordion">
+          <details class="accordion-disclosure">
+            <summary class="accordion-caption">
+              Governança
+            </summary>
+
+            <ul class="item-wrapper">
+              <li class="item">
+                <a href="">Estrutura</a>
+              </li>
+              <li class="item">
+                <a href="">Diretoria</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="menu-accordion">
+          <details class="accordion-disclosure">
+            <summary class="accordion-caption">
+              Transparência
+            </summary>
+
+            <ul class="item-wrapper">
+              <li class="item">
+                <a href="">Código de Ética</a>
+              </li>
+              <li class="item">
+                <a href="">Política de Privacidade</a>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li class="menu-link">
+            <a href="">Projetos</a>
+        </li>
+      </ul>
+    </details>
+</nav>
+
+<style lang="styl">
+.menu-wrapper
+  background rgb(7 120 184)
+  color rgb(255, 255, 255)
+  font var(--fontSecondary)
+  width 100%
+
+.menu-caption
+  list-style none
+  padding 10px 20px
+
+.accordion-caption
+  list-style none
+  padding 10px 35px
+
+.item-wrapper
+  background rgb(6, 80, 145)
+
+.item
+  padding: 10px 60px;
+
+.item a
+  color rgb(255, 255, 255)
+  text-decoration none
+
+.menu-link
+  padding: 10px 35px
+
+.menu-link a
+  color rgb(255, 255, 255)
+  text-decoration none
+
+.menu-caption, .accordion-caption
+  cursor pointer
+
+.menu-caption i, .accordion-caption i::before
+  margin-right: 5px
+
+.menu-disclosure[open] > .menu-caption
+  background rgb(6, 80, 145)
+
+.accordion-disclosure[open] > .accordion-caption
+  background rgb(6, 80, 145)
+</style>
