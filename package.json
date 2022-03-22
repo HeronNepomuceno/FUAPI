@@ -10,6 +10,8 @@
   },
   "devDependencies": {
     "astro": "^0.24.3",
-    "npm-check-updates": "^12.5.4"
+    "npm-check-updates": "^12.5.4",
+    "stylus": "^0.55.0",
+    "svg-sprite": "^1.5.4"
   }
 }
