@@ -3,7 +3,7 @@ import IconComp from '../components/IconComp.astro';
 ---
 
 <nav class="menu-wrapper">
-    <details class="menu-disclosure">
+    <details id="menuControl" class="menu-disclosure">
       <summary class="menu-caption">
         <IconComp i="menu" w="24px" fillColor="rgb(255, 255, 255)" gapRight="5px"/> Menu
       </summary>
@@ -69,6 +69,29 @@ import IconComp from '../components/IconComp.astro';
 </nav>
 
 <style lang="styl">
+@media (min-width: 800px)
+  .menu-disclosure
+    height 45px
+
+  .menu-caption
+    display none
+  
+  .menu-list
+    display flex
+    margin: 0 auto
+    max-width: 1200px
+
+  .item
+    padding: 5% 15%
+
+@media (max-width: 799px)
+  .menu-caption
+    align-items center
+    display flex
+
+  .item
+    padding: 3% 15%
+
 .menu-wrapper
   background rgb(7 120 184)
   color rgb(255, 255, 255)
@@ -76,8 +99,6 @@ import IconComp from '../components/IconComp.astro';
   width 100%
 
 .menu-caption
-  align-items center
-  display flex
   list-style none
   padding 10px 20px
 
@@ -90,15 +111,12 @@ import IconComp from '../components/IconComp.astro';
 .item-wrapper
   background rgb(6, 80, 145)
 
-.item
-  padding: 10px 65px;
-
 .item a
   color rgb(255, 255, 255)
   text-decoration none
 
 .menu-link
-  padding: 10px 40px
+  padding: 12px 35px
 
 .menu-link a
   color rgb(255, 255, 255)
@@ -116,3 +134,16 @@ import IconComp from '../components/IconComp.astro';
 .accordion-disclosure[open] > .accordion-caption
   background rgb(6, 80, 145)
 </style>
+
+<script>
+function changeMenuControl(bool) {
+  document.getElementById("menuControl").open = bool;
+}
+
+function verifyWindowSize() {
+  window.matchMedia('(min-width: 800px)').matches ? changeMenuControl(true) : changeMenuControl(false);
+}
+
+verifyWindowSize();
+window.onresize = verifyWindowSize;
+</script>
