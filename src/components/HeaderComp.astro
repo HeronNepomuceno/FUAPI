@@ -3,20 +3,25 @@
 		<img class="logo" src="/assets/logoFUAPI.svg" alt="">
 		<h6 class="title">Fundação de Apoio ao Desenvolvimento Educacional, Governança e Meio Ambiente da UESPI</h6>
 	</div>
+	<slot/>
 </header>
 
 <style lang="styl">
 .header-wrapper
 	align-items center
+	backdrop-filter blur(5px)
+	background rgba(255, 255, 255, 0.80)
 	display flex
-	padding 16px
-	// position fixed
-	width 100%
 	flex-direction column
+	position fixed
+	top 0
+	width 100%
+	z-index 2
 
 .header-logo
 	align-items center
 	display flex
+	padding 16px
 
 .logo
 	height 32px

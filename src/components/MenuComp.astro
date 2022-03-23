@@ -93,7 +93,7 @@ import IconComp from '../components/IconComp.astro';
     padding: 3% 15%
 
 .menu-wrapper
-  background rgb(7 120 184)
+  background rgb(7, 120, 184)
   color rgb(255, 255, 255)
   font var(--fontSecondary)
   width 100%
@@ -108,12 +108,24 @@ import IconComp from '../components/IconComp.astro';
   list-style none
   padding 10px 35px
 
+.accordion-caption:hover, .menu-link:hover
+  background rgb(6, 80, 145)
+
 .item-wrapper
   background rgb(6, 80, 145)
 
+.item
+  cursor pointer
+
+.item:hover
+  background rgb(2, 64, 118)
+
 .item a
-  color rgb(255, 255, 255)
+  color rgba(255, 255, 255, 0.8)
   text-decoration none
+
+.item:hover > a
+  color rgb(255, 255, 255)
 
 .menu-link
   padding: 12px 35px
@@ -133,6 +145,7 @@ import IconComp from '../components/IconComp.astro';
 
 .accordion-disclosure[open] > .accordion-caption
   background rgb(6, 80, 145)
+
 </style>
 
 <script>

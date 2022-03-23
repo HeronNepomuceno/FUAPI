@@ -1,5 +1,6 @@
 ---
 // Style Imports
+import '../styles/global.styl'
 import '../styles/reset.styl';
 import '../styles/vars.styl';
 
@@ -26,8 +27,10 @@ let title = 'My Astro Site';
 	<link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-	<HeaderComp />
-	<MenuComp />
+	<HeaderComp>
+		<MenuComp/>
+	</HeaderComp>
+
 	<main>
 		<!-- <CardGrid>
 			<Card
