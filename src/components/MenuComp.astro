@@ -72,7 +72,7 @@ import IconComp from '../components/IconComp.astro';
 <style lang="styl">
 @media (min-width: 800px)
   .menu-disclosure
-    height 45px
+    height 44px
 
   .menu-caption
     display none
@@ -81,16 +81,16 @@ import IconComp from '../components/IconComp.astro';
     display flex
     margin: 0 auto
     max-width: 1200px
-
-  .item
-    padding: 5% 15%
+  
+  .item a
+    padding 5% 15%
 
 @media (max-width: 799px)
   .menu-caption
     align-items center
     display flex
 
-  .item
+  .item a
     padding: 3% 15%
 
 .menu-wrapper
@@ -117,7 +117,6 @@ import IconComp from '../components/IconComp.astro';
 
 .item
   cursor pointer
-  
 
 .item:hover
   background rgb(2, 64, 118)
@@ -125,6 +124,7 @@ import IconComp from '../components/IconComp.astro';
 .item a
   color rgba(255, 255, 255, 0.8)
   text-decoration none
+  display block
 
 .item:hover > a
   color rgb(255, 255, 255)
