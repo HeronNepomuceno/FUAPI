@@ -63,7 +63,7 @@ import IconComp from '../components/IconComp.astro';
         </li>
 
         <li class="menu-link">
-            <a href="">Projetos</a>
+          <a href="">Projetos</a>
         </li>
       </ul>
     </details>
@@ -76,6 +76,9 @@ import IconComp from '../components/IconComp.astro';
 
   .menu-caption
     display none
+  
+  .menu-accordion, .menu-link
+    max-height 44px
   
   .menu-list
     display flex
@@ -129,11 +132,10 @@ import IconComp from '../components/IconComp.astro';
 .item:hover > a
   color rgb(255, 255, 255)
 
-.menu-link
-  padding: 12px 35px
-
 .menu-link a
   color rgb(255, 255, 255)
+  display block
+  padding 12px 35px
   text-decoration none
 
 .menu-caption, .accordion-caption
