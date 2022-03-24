@@ -1,0 +1,43 @@
+---
+// Style Imports
+import '../styles/global.styl'
+import '../styles/reset.styl';
+import '../styles/vars.styl';
+
+// Component Imports
+import HeaderComp from '../components/HeaderComp.astro';
+import MenuComp from '../components/MenuComp.astro';
+import Fab from '../components/Fab.astro';
+import FooterComp from '../components/FooterComp.astro';
+
+let title = 'Resumo - FUAPI';
+
+// src/layouts/BaseLayout.astro
+// 1. The content prop gives access to frontmatter data
+const { content } = Astro.props;
+---
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <title>{title}</title>
+  </head>
+  <body>
+  
+  	<HeaderComp>
+		  <MenuComp/>
+	  </HeaderComp>
+
+    <main class="main-markdown">
+      <slot />
+    </main>
+
+    <FooterComp />
+    <Fab/>
+
+  </body>
+</html>
