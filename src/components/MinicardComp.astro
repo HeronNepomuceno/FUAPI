@@ -1,0 +1,18 @@
+---
+const {title} = Astro.props;
+const {description} = Astro.props;
+---
+
+<div class="minicard">
+	<div class="title">{title}</div>
+	<div class="decription">{description}</div>
+</div>
+
+<style lang="styl">
+.minicard
+	background #ccc
+	display flex
+	flex 1
+	flex-direction column
+	padding 16px
+</style>
