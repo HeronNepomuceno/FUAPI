@@ -1,5 +1,6 @@
 ---
 // Style Imports
+import '../styles/global.styl'
 import '../styles/reset.styl';
 import '../styles/vars.styl';
 
@@ -28,41 +29,10 @@ let title = 'My Astro Site';
 	<link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-	<HeaderComp />
-	<MenuComp />
+	<HeaderComp>
+		<MenuComp/>
+	</HeaderComp>
 	<main>
-		<!-- <CardGrid>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-			<Card
-				title="Projeto"
-				image="/assets/img/dario.jpg"
-				description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-				url="#"/>
-		</CardGrid> -->
 		<CardGrid>
 			<Card
 				title="Projeto"

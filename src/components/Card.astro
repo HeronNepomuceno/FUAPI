@@ -40,12 +40,18 @@ const {url} = Astro.props;
 	bottom 0
 	color #f0f9ff // (temp) need vars
 	display flex
+	font var(--fontPrimary)
+	font-size 16px // (temp) need vars
 	left 0
 	padding 16px
 	position absolute
 
 .body
 	padding 0 16px 24px
+
+.description
+	font var(--fontSecondary) // (temp) need vars
+	font-size 14px // (temp) need vars
 
 .footer
 	padding 0 16px 16px
@@ -57,6 +63,7 @@ const {url} = Astro.props;
 	color #f0f9ff // (temp) need vars
 	display flex
 	fill #f0f9ff // (temp) need vars
+	font var(--fontSecondary) // (temp) need vars
 	height 40px
 	justify-content center
 	padding 0 16px

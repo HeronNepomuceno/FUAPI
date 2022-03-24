@@ -2,11 +2,18 @@
 const {cards} = Astro.props;
 ---
 
-<section class="minicard-grid">
-	<slot/>
+<section>
+	<h3 class="title">title</h3>
+	<div class="minicard-grid">
+		<slot/>
+	</div>
 </section>
 
 <style lang="styl">
+.title
+	margin 24px 0
+	text-align center
+
 .minicard-grid
 	display grid
 	grid-gap 8px

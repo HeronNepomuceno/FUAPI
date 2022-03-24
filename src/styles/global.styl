@@ -1,3 +1,38 @@
-.h3-title
-	margin 16px 0
-	text-align center
+html
+  scroll-behavior smooth
+
+.main-markdown
+  margin-top 158px
+  padding 0 32px
+
+  @media (min-width: 600px)
+    padding 16px 64px
+
+  p:first-of-type
+    margin-bottom 48px
+
+  h1
+    font var(--fontPrimary)
+    font-size 28px
+    margin 16px 0 32px 0
+
+    @media (min-width: 600px)
+      font-size 34px
+
+  p
+    display flex
+    flex-direction column
+    font var(--fontSecondary)
+    font-size 16px
+
+    @media (min-width: 600px)
+      font-size 18px
+      margin-bottom 16px
+
+    a
+      font var(--fontPrimary)
+      font-size 18px
+      margin 16px 0 8px 0
+
+      @media (min-width: 600px)
+        font-size 20px

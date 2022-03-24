@@ -1,33 +1,54 @@
 <header class="header-wrapper">
-  <div class="header-logo">
-    <img class="logo" src="/assets/logoFUAPI.svg" alt="">
-    <h6 class="title">Fundação de Apoio ao Desenvolvimento Educacional, Governança e Meio Ambiente da UESPI</h6>
-  </div>
+	<div class="header-logo">
+		<img class="logo" src="/assets/logoFUAPI.svg" alt="">
+		<h6 class="title">Fundação de Apoio ao Desenvolvimento Educacional, Governança e Meio Ambiente da UESPI</h6>
+	</div>
+	<slot/>
 </header>
 
 <style lang="styl">
 .header-wrapper
-  align-items center
-  display flex
-  height 64px
-  padding 16px
-  // position fixed
-  width 100%
-  flex-direction column
+	align-items center
+	backdrop-filter blur(5px)
+	background rgba(255, 255, 255, 0.80)
+	display flex
+	flex-direction column
+	position fixed
+	top 0
+	width 100%
+	z-index 2
 
 .header-logo
 	align-items center
 	display flex
+	padding 16px
+
+	@media (min-width: 600px)
+		max-width 600px
+
+	@media (min-width: 840px)
+		max-width 700px
 
 .logo
 	height 32px
 	width auto
 
+	@media (min-width: 600px)
+		height 48px
+
+	@media (min-width: 840px)
+		height 64px
+
 .title
 	margin-left 8px
 	font var(--fontPrimary)
-	text-align center
 
+	@media (min-width: 600px)
+		font-size 14px
+
+	@media (min-width: 840px)
+		font-size 18px
+	
 .header-bar
 	background blue
 	width 100%
