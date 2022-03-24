@@ -5,7 +5,7 @@ const {description} = Astro.props;
 
 <div class="minicard">
 	<div class="title">{title}</div>
-	<div class="decription">{description}</div>
+	<div class="description">{description}</div>
 </div>
 
 <style lang="styl">
@@ -15,4 +15,19 @@ const {description} = Astro.props;
 	flex 1
 	flex-direction column
 	padding 16px
+
+.title
+	font var(--fontPrimary)
+	font-size 18px
+	margin-bottom 8px
+
+	@media (min-width: 600px)
+		font-size 22px
+
+.description 
+	font var(--fontSecondary)
+	font-size 16px
+
+	@media (min-width: 600px)
+		font-size 18px
 </style>

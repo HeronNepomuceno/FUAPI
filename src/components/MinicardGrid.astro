@@ -3,7 +3,7 @@ const {cards} = Astro.props;
 ---
 
 <section>
-	<h3 class="title">title</h3>
+	<h3 class="title">Title Section</h3>
 	<div class="minicard-grid">
 		<slot/>
 	</div>
@@ -11,8 +11,15 @@ const {cards} = Astro.props;
 
 <style lang="styl">
 .title
-	margin 24px 0
+	color var(--blue-darken-4)
+	font var(--fontPrimary)
+	font-size 22px
+	margin 64px 0 48px 0
 	text-align center
+	text-decoration underline solid var(--green-darken-1) 2px
+
+	@media (min-width: 600px)
+		font-size 28px
 
 .minicard-grid
 	display grid
