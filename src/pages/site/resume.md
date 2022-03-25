@@ -2,27 +2,26 @@
 layout: /src/layouts/BaseLayout.astro
 ---
 
-# Em Resumo
+# What is Lorem Ipsum?
 
-A Fundação de Apoio à Universidade de São Paulo - FUSP é uma entidade sem fins lucrativos que foi criada com o principal objetivo de flexibilizar, agilizar e contribuir para a eficiência das atividades da Universidade de São Paulo.
-Foi planejada desde o início com o compromisso de apoiar e dar suporte gerencial aos Institutos, Escolas, Núcleos de Apoio e Órgãos da Universidade, propiciando uma facilidade mais ampla na execução de projetos de interesse da USP.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-[Diretoria][df1]
-A Diretoria, composta por três diretores, é responsável pelas diretrizes e políticas da FUSP, aprovadas pelo Conselho Curador.
+[Voluptas sit][df1]
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 
-[Conselho do Curador][df1]
-O conselho curador, presidido pelo Magnífico Reitor da Universidade de São Paulo, é responsável pela aprovação e acompanhamento das atividades da FUSP.
+[Ullam corporis suscipit][df1]
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 
-[Conselho Fiscal][df1]
-O Conselho Fiscal é responsável pela fiscalização dos atos dos administradores e cumprimento de seus deveres legais e estatutários.
+[Dolorum fuga][df1]
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
 
-[História][df1]
-No dia 20 de Julho 1992 foi lavrada a escritura pública de sua instituição
+[Et harum quidem rerum facilis][df1]
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
 
-[Utilidade Pública][df1]
-A FUSP é reconhecida pelo governo pelos serviços prestados à sociedade possuindo títulos de utilidade Pública Federal, Estadual e Municipal.
+[Cillum dolore eu][df1]
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-[LOCALIZAÇÃO][df1]
-Praça Firmina Sobreira S/N Bairro: Matinha, Teresina - PI - Brasil, CEP: 64002-190
+[Finibus Bonorum et Malorum][df1]
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 
 [df1]: <http://daringfireball.net/projects/markdown/>
