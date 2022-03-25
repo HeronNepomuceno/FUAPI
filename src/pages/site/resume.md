@@ -1,5 +1,6 @@
 ---
 layout: /src/layouts/BaseLayout.astro
+title: 'Resumo - FUAPI'
 ---
 
 # What is Lorem Ipsum?

@@ -10,8 +10,6 @@ import MenuComp from '../components/MenuComp.astro';
 import Fab from '../components/Fab.astro';
 import FooterComp from '../components/FooterComp.astro';
 
-let title = 'Resumo - FUAPI';
-
 // src/layouts/BaseLayout.astro
 // 1. The content prop gives access to frontmatter data
 const { content } = Astro.props;
@@ -24,7 +22,7 @@ const { content } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@600&family=Roboto&display=swap" rel="stylesheet">
-    <title>{title}</title>
+    <title>{content.title}</title>
   </head>
   <body>
   
